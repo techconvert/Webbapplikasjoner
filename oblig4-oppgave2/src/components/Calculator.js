@@ -10,7 +10,6 @@ export default function Calculator() {
   const multiply = () => setResult(value1 * value2)
   const divide = () => setResult(value1 / value2)
 
-  // ToDo: Skriv om med ternary operator
   function handleChange(e) {
     if(isNaN(e.target.value)) {
       throw new Error({ code : 501, message : "The text entered isn't a number" })
